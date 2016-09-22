@@ -4,16 +4,16 @@
 exe
 C#
 .cs
-D:\Rib\Project1\Quiz-system\Intelligence\obj\Debug\
+D:\Rib\Kurs\Dota-2-Quiz\Intelligence\obj\Debug\
 Intelligence
 none
 false
 DEBUG;TRACE
-D:\Rib\Project1\Quiz-system\Intelligence\App.xaml
+D:\Rib\Kurs\Dota-2-Quiz\Intelligence\App.xaml
 2161737354
 
-10315504389
-13738642453
+151201696623
+181009746563
 MainWindow.xaml;Menu.xaml;
 
 False

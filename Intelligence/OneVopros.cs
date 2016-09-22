@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace Intelligence {
   public   class OneVopros {
@@ -15,16 +16,18 @@ namespace Intelligence {
         int idQuest = 0;
         List<bool> check = new List<bool>();
         int Ball = 1;
-        public OneVopros(int ball,int id,string quest, string[] vop, bool[] otv) {
+        public OneVopros(int ball,int id,string quest, List<string> vop,List<bool> otv) {
             Ball = ball;
             idQuest = id;
             Quest.Content = id.ToString() + ". " + quest;
             stakPanel.Children.Add(Quest);
+            Quest.Foreground = Brushes.White;
             for (int i = 0; i < vop.Count(); i++) {
                 textVop.Add(new Label() { Content = vop[i]} );
                 textVop[i].HorizontalAlignment = System.Windows.HorizontalAlignment.Left;
                 textVop[i].VerticalAlignment = System.Windows.VerticalAlignment.Top;
                 textVop[i].Padding = new System.Windows.Thickness(10,0,0,0);
+                textVop[i].Foreground = Brushes.White;
                 checkBox.Add(new CheckBox());
                 checkBox[i].Height = 30;
                 check.Add(otv[i]);
